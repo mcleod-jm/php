@@ -2,7 +2,7 @@
 	include 'login.php';
 	$db_name = $login['DB_DATABASE'];
 	$table_name = $login['DB_TABLE'];
-	$csvString = "";
+	$CSV;
 	$host = $login['DB_HOST'];
 	$connection = @mysqli_connect($host, $login['DB_USERNAME'], $login['DB_PASSWORD']) or die(mysql_error());
 	$db = @mysqli_select_db($connection, $db_name) or die(mysql_error());
@@ -20,6 +20,13 @@
         $postal = $row['postal'];
 		$birthday = $row['birthday'];
         
-        
-        $csvString .= "$firstName,$lastName,$phone,$email,$mail,$city,$province,$postal,$birthday";
-	}
+        $CSV .= "$firstName,$lastName,$phone,$email,$mail,$city,$province,$postal,$birthday\n";
+
+        $fileName = "./clients.CSV";
+        $newFile = fopen($fileName, "w+");
+        @fwrite($newFile, $CSV);
+        fclose($newFile);
+
+        header("Location: ./clients.csv");
+    }
+?>
