@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Add a Record</title>
+	</head>
+	<body>
+		<h1>Adding a Record to my_music</h1>			
+		<form method="POST" action="do_addrecord.php">
+			<table cellspacing=3 cellpadding=3>
+				<tr>
+					<td valign=top>
+						<p><strong>First Name:</strong><br>
+						<input type="text" name="firstName" size=30 maxlength=50></p>
+						<p><strong>Last Name:</strong><br>
+						<input type="text" name="lastName" size=30 maxlength=50></p>
+					</td>	
+					<td valign=top>
+						<p><strong>Phone Number:</strong><br>
+						<input type="text" name="phone" size=30 maxlength=15></p>
+						<p><strong>Email Address:</strong><br>
+						<input type="text" name="email" size=30 maxlength=50></p>
+					</td>				
+				</tr>
+				<tr>
+					<td valign=top>
+						<p><strong>Mailing Address:</strong><br>
+						<input type="text" name="mail" size=35 maxlength=250></p>
+					</td>
+					<td valign=top>
+						<p><strong>City:</strong><br>
+						<input type="text" name="city" size=35 maxlength=50></p>
+					</td>
+				</tr>
+				<tr>
+					<td valign=top>
+						<p><strong>Province:</strong><br>
+						<input type="text" name="province" size=5 maxlength=2></p>
+					</td>
+					<td valign=top>
+						<p><strong>Postal Code:</strong><br>
+						<input type="text" name="postal" size=10 maxlength=7></p>
+					</td>
+				</tr>
+				<tr>
+					<td valign=top>
+						<p><strong>Birthday (MM/DD/YYYY):</strong><br>
+						<input type="text" name="birthday" size=10 maxlength=10></p>
+					</td>
+				</tr>
+				<tr>
+					<td valign=top colspan=2 align=center>
+						<p><input type="SUBMIT" name="submit" value="Add Record"></p>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
+
