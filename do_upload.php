@@ -26,13 +26,13 @@
 				{
 					echo "<script type=\"text/javascript\">
 							alert(\"Invalid File:Please Upload CSV File.\");
-							window.location = \"menu.html\"
+							window.location = \"index.html\"
 						  </script>";		
 				}
 				else {
 					  echo "<script type=\"text/javascript\">
 						alert(\"CSV File has been successfully Imported.\");
-						window.location = \"menu.html\"
+						window.location = \"index.html\"
 					</script>";
 				}
 	         }

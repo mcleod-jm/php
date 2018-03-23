@@ -21,6 +21,7 @@
 <html>
 	<head>
 		<title>Add a Record</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css" />
 	</head>
 	<body>
 		<h1>Adding a Record to <?php echo "$table_name"; ?></h1>
